@@ -480,7 +480,7 @@ function RemoveProtest($pid, $archiv)
 		if($query1)
 		{
 			$objResponse->addScript("ShowBox('Protest Restored', 'The selected protest has been restored from the archive.', 'green', 'index.php?p=admin&c=bans', true);");
-			$log = new CSystemLog("m", "Protest Deleted", "Protest (" . $pid . ") has been restored from the archive.");
+			$log = new CSystemLog("m", "Protest Restored", "Protest (" . $pid . ") has been restored from the archive.");
 		}
 		else
 			$objResponse->addScript("ShowBox('Error', 'There was a problem restoring the protest from the archive. Check the logs for more info', 'red', 'index.php?p=admin&c=bans', true);");
